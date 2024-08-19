@@ -1,0 +1,283 @@
+/* Reset some basic elements */
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #222;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Background Video Container */
+.video-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none; 
+}
+
+/* Background Video Styling */
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar Styling */
+nav {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Brand */
+nav .brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Navbar Links */
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar Links Hover */
+nav a:hover {
+    background-color: #ff6347; 
+    color: #fff; 
+}
+
+/* Search Input */
+nav input[type="text"] {
+    padding: 8px; 
+    border: none; 
+    border-radius: 4px; 
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Search Button */
+nav button {
+    background-color: #ff6347; 
+    color: white; 
+    border: none; 
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Search Button Hover */
+nav button:hover {
+    background-color: #e55347;
+}
+
+/* Content Styling */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    color: #ff6347;
+}
+
+/* Explore Button */
+.content button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Explore Button Hover */
+.content button:hover {
+    background-color: #e55347;
+}
+
+/* Main Content Section */
+main {
+    padding: 60px 30px;
+    background-color: rgba(34, 34, 34, 0.8); 
+    color: #fff;
+}
+
+/* Intro, Features, and Newsletter Sections */
+.intro, .features, .newsletter {
+    margin-bottom: 40px;
+}
+
+/* Intro and Newsletter Headings */
+.intro h2, .newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+/* Paragraphs in Intro, Features, and Newsletter */
+.intro p, .features p, .newsletter p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Feature Items */
+.feature-item {
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Feature Item Headings */
+.features h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ff6347;
+}
+
+/* Newsletter Form */
+.newsletter form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Newsletter Email Input */
+.newsletter input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+
+/* Newsletter Subscribe Button */
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Newsletter Subscribe Button Hover */
+.newsletter button:hover {
+    background-color: #e55347;
+}
+
+/* Footer Section */
+footer {
+    background-color: #111; 
+    color: #fff;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* Footer Content Divs */
+.footer-content div {
+    width: 30%;
+}
+
+/* Footer Content Headings */
+.footer-content h4 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+/* Footer Links */
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Footer Links Items */
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Footer Links Hover */
+.footer-content ul li a:hover {
+    color: #ff6347;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+/* Footer Bottom Text */
+.footer-bottom p {
+    font-size: 1em;
+    color: #aaa;
+}
